@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feijoada da Edna</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #009c3b, #ffdf00);
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    h1 {
+      color: #009c3b;
+    }
+    .info {
+      margin: 1rem 0;
+    }
+    .paypal-button {
+      margin-top: 2rem;
+    }
+    .flag {
+      width: 80px;
+    }
+    .button-style {
+      padding: 10px 20px;
+      background-color: #ffc439;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" alt="Bandeira do Brasil" class="flag">
+    <h1>Feijoada da Edna</h1>
+    <p class="info">📍 <strong>Restaurante Lima Fusion Food</strong><br>Hilmannplatz 20, 28195 Bremen</p>
+    <p class="info">📅 <strong>25 de Maio de 2025</strong><br>a partir das 13h</p>
+    <p class="info">🎶 <strong>Música ao vivo com Vando Oliveira</strong></p>
+    <p class="info">🍽️ <strong>Ingresso: €32</strong><br>(Entrada + Feijoada)</p>
+
+    <div class="paypal-button">
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="paulobezerra@outlook.de">
+        <input type="hidden" name="item_name" value="Ingresso Feijoada da Edna">
+        <input type="hidden" name="amount" value="32.00">
+        <input type="hidden" name="currency_code" value="EUR">
+        <input type="submit" value="Comprar Ingresso com PayPal" class="button-style">
+      </form>
+    </div>
+
+    <p style="margin-top: 2rem; font-size: 0.9rem;">🇩🇪 <strong>Deutschsprachige Version folgt bald!</strong></p>
+  </div>
+</body>
+</html>
